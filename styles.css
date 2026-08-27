@@ -1,0 +1,673 @@
+/* =========================================
+   RESET
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:auto;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#4b0000,#8b0000,#d62828);
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+    position:relative;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar{
+    width:100%;
+    height:78px;
+
+    padding:0 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:sticky;
+    top:0;
+    z-index:999;
+
+    background:rgba(75,0,0,0.92);
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(12px);
+
+    transition:0.3s ease;
+}
+
+.navbar.scrolled{
+    background:rgba(60,0,0,0.98);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:1.25rem;
+    font-weight:700;
+}
+
+.logo i{
+    color:#ffb3b3;
+}
+
+.clock{
+    font-size:1rem;
+    font-weight:600;
+
+    opacity:0.9;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero{
+    width:100%;
+
+    padding:90px 20px 35px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.hero-content{
+    max-width:900px;
+
+    animation:fadeUp 1s ease;
+}
+
+.hero-tag{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 30px;
+
+    margin-bottom:25px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,0.08);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(12px);
+
+    font-size:1rem;
+    font-weight:500;
+}
+
+.hero h1{
+    font-size:4.4rem;
+    font-weight:800;
+
+    line-height:1.05;
+
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.15rem;
+
+    line-height:1.7;
+
+    opacity:0.92;
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.container{
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+
+    padding:10px 20px 20px;
+}
+
+.portfolio-section{
+    width:100%;
+    max-width:1450px;
+
+    padding:10px 35px 35px;
+}
+
+
+/* =========================================
+   TITULO
+========================================= */
+
+.section-header{
+    text-align:center;
+
+    margin-bottom:35px;
+}
+
+.section-header h2{
+    font-size:2.9rem;
+
+    font-weight:800;
+
+    animation: fadeUp 0.8s ease;
+}
+
+/* =========================================
+   GRID ACTIVIDADES
+========================================= */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+
+/* =========================================
+   TARJETAS ACTIVIDADES
+========================================= */
+
+.project-card{
+    animation:fadeUp 0.8s ease forwards;
+    opacity:0;
+
+    transition:transform 0.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-4px);
+}
+
+.actividad-card{
+    display:flex;
+    width:100%;
+    overflow:hidden;
+}
+
+/* botón principal */
+.actividad-button{
+    flex:1;
+    display:flex;
+    text-decoration:none;
+    cursor:pointer;
+    transition:0.15s ease;
+}
+
+.actividad-button:hover{
+    transform:translateY(-4px);
+}
+
+.activity-button,
+.task-button {
+    /*cursor: pointer;*/
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+.activity-side-button{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+}
+
+.resource-button,
+.visit-status{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 15px;
+    font-weight:700;
+    font-size:1rem;
+    text-align:center;
+}
+
+/* número */
+.card-number{
+    min-width:100px;
+    height:100px;
+
+    background:#8b0000;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:2.4rem;
+    font-weight:800;
+
+    transition:0.3s ease;
+}
+
+.actividad-button:hover .card-number{
+    background:#b22222;
+}
+
+/* contenido */
+.card-content{
+    width:100%;
+    height:100px;
+
+    background:#f5f5f5;
+    color:#8b0000;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    padding:0 26px;
+
+    transition:0.3s ease;
+}
+
+.actividad-button:hover .card-content{
+    background:#fafafa;
+}
+.card-content h3{
+    font-size:1.75rem;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.actividad-button,
+.resource-button{
+    user-select:none;
+}
+
+
+/* =========================================
+   BOTÓN LATERAL (Drive / Canva)
+========================================= */
+
+.activity-side-button{
+    width:170px;
+    min-width:170px;
+    display:flex;
+    flex-direction:column;
+
+    height:100%;
+}
+
+.resource-button{
+    position: relative;
+    z-index: 2;
+}
+
+
+.resource-button{
+    flex:1;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    background:#8b0000;
+    color:white;
+
+    font-weight:700;
+
+    transition:0.35s ease;
+}
+
+
+.resource-button:hover{
+    background:#d62828;
+}
+
+
+.visit-status{
+    flex:1;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:700;
+    font-size:0.95rem;
+
+    color:white;
+
+    user-select:none;
+}
+
+
+.resource-button,
+.visit-status{
+    flex:1;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:0 15px;
+
+    font-weight:700;
+    font-size:1rem;
+
+    text-align:center;
+}
+
+/* hover igual que actividad */
+.resource-button:hover{
+    transform:translateY(-4px);
+    background:#d62828;
+}
+
+/* brillo suave */
+.resource-button::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,0.08);
+    opacity:0;
+    transition:0.3s ease;
+    pointer-events:none;
+}
+
+.resource-button:hover::after{
+    opacity:1;
+}
+
+.con-visita{
+    background:#198754;
+}
+
+.sin-visita{
+    background:#6c757d;
+}
+
+
+/* =========================================
+   BOTÓN VOLVER
+========================================= */
+
+#back-button-container{
+    position:fixed;
+    top:95px;
+    left:25px;
+
+    z-index:1000;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(-20px);
+    transition:0.3s ease;
+}
+
+#back-button-container.visible{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+#back-to-list{
+    border:none;
+    background:white;
+    color:#8b0000;
+
+    padding:16px 24px;
+    border-radius:50px;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-family:'Poppins',sans-serif;
+    font-size:1rem;
+    font-weight:600;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:0.3s ease;
+}
+
+#back-to-list:hover{
+    transform:scale(1.05);
+}
+
+
+/* =========================================
+   VISOR
+========================================= */
+
+#actividades-wrapper,
+#observaciones-wrapper,
+#content-wrapper{
+    width:100%;
+}
+
+#content-wrapper.show{
+    animation:fadeUp 0.45s ease;
+}
+
+.viewer-header{
+    width:100%;
+    padding:20px 25px;
+
+    background:#8b0000;
+    color:white;
+
+    font-size:1rem;
+    font-weight:600;
+
+    border-radius:10px 10px 0 0;
+}
+
+.iframe-container{
+    width:100%;
+    height:78vh;
+
+    background:white;
+
+    overflow:hidden;
+    border-radius:0 0 10px 10px;
+}
+
+#content-frame{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+
+/* =========================================
+   UTILIDADES
+========================================= */
+
+.hidden{
+    display:none;
+}
+
+.fade-out{
+    animation:fadeOut 0.25s ease forwards;
+}
+
+#actividades-wrapper.hidden,
+#observaciones-wrapper.hidden,
+#content-wrapper.hidden{
+    height:0;
+    overflow:hidden;
+}
+
+
+/* =========================================
+   FONDO
+========================================= */
+
+.background-shapes{
+    position:fixed;
+    inset:0;
+
+    z-index:-1;
+    pointer-events:none;
+}
+
+.background-shapes span{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,255,255,0.04);
+    animation:float 10s infinite ease-in-out;
+}
+
+.background-shapes span:nth-child(1){
+    width:340px;
+    height:340px;
+    top:90px;
+    left:-130px;
+}
+
+.background-shapes span:nth-child(2){
+    width:260px;
+    height:260px;
+    bottom:90px;
+    right:-80px;
+}
+
+.background-shapes span:nth-child(3){
+    width:180px;
+    height:180px;
+    top:50%;
+    left:45%;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer{
+    width:100%;
+    padding:30px 20px;
+    text-align:center;
+    font-size:1rem;
+    opacity:0.85;
+}
+
+
+/* BOTÓN DRIVE */
+.actividad-full .resource-button{
+    height: 100%;
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* =========================================
+   ANIMACIONES
+========================================= */
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeOut{
+    from{opacity:1; transform:translateY(0);}
+    to{opacity:0; transform:translateY(15px);}
+}
+
+@keyframes float{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-25px);}
+    100%{transform:translateY(0px);}
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:1200px){
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .actividad-card{
+        flex-direction:column;
+    }
+
+    .activity-side-button{
+        width:100%;
+        min-width:100%;
+    }
+
+    .resource-button,
+    .visit-status{
+        height:60px;
+    }
+
+    .resource-button{
+        border-top:1px solid rgba(255,255,255,0.15);
+    }
+
+    .hero h1{
+        font-size:2.7rem;
+    }
+
+    .section-header h2{
+        font-size:1.9rem;
+    }
+
+    .card-number{
+        width:100%;
+        height:80px;
+    }
+
+    .card-content{
+        height:auto;
+        padding:22px 18px;
+    }
+}
+
+@media(max-width:500px){
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .section-header h2{
+        font-size:1.6rem;
+    }
+
+    .card-content{
+        flex-direction:column;
+        gap:12px;
+        text-align:center;
+    }
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Didáctica II | Portfolio de planificaciones
+    </title>
+
+    <!-- ICONO -->
+    <link rel="icon" href="icon.png" type="image/x-png">
+
+    <!-- FUENTE -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- ================================= -->
+    <!-- NAVBAR -->
+    <!-- ================================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <span>
+                Portfolio de planificaciones
+            </span>
+
+        </div>
+
+        <div id="live-clock"
+            class="clock">
+        </div>
+
+    </nav>
+
+    <!-- ================================= -->
+    <!-- BOTÓN VOLVER -->
+    <!-- ================================= -->
+
+    <div id="back-button-container">
+
+        <button id="back-to-list">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Volver
+
+        </button>
+
+    </div>
+
+    <!-- ================================= -->
+    <!-- HERO -->
+    <!-- ================================= -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                Ezequiel Albornoz
+            </span>
+
+            <h1>
+                Didáctica II
+            </h1>
+
+            <p>
+                En este espacio se presentan las planificaciones, observaciones y <br> 
+                autoevaluaciones realizadas durante las prácticas de Didáctica II.
+            </p>
+
+        </div>
+
+    </header>
+
+    <div class="section-header">
+
+        <h2 id="section-title">
+            Observaciones y planificaciones:
+        </h2>
+
+    </div> 
+
+    <!-- ================================= -->
+    <!-- CONTENIDO -->
+    <!-- ================================= -->
+
+    <main class="container">
+
+        <section class="portfolio-section">
+
+            
+            <!-- OBSERVACIONES -->
+             
+            <div id="observaciones-wrapper">
+                <article class="project-card actividad-card actividad-full">
+
+                    <button class="task-button actividad-button"
+                        data-title="Observaciones de las clases"
+                        data-link="https://docs.google.com/document/d/1vhpzls16RTNjDec1oj2rPIU6PptBOBAqgrX0t_8hgco/preview">
+
+                        <div class="card-number"><i class="fa-solid fa-clipboard-list"></i></div>
+                        <div class="card-content"><h3>Observaciones realizadas durante las clases presenciales <br> a lo largo del año</h3></div>
+                    </button>
+
+                    <div class="activity-side-button">
+
+                        <a href="https://docs.google.com/document/d/1vhpzls16RTNjDec1oj2rPIU6PptBOBAqgrX0t_8hgco/edit?usp=sharing"
+                            target="_blank"class="resource-button">
+                            Drive
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <h2>&nbsp;</h2>
+
+            <!-- PLANIFICACIONES -->
+
+            <!-- ========================= -->
+            <!-- LISTADO PLANIFICACIONES -->
+            <!-- ========================= -->
+
+            <div id="actividades-wrapper">
+                <div class="projects-grid">
+                    <!-- Planificación 1 -->
+
+                    <article class="project-card actividad-card">
+                    <button class="task-button actividad-button"
+                        data-title="Planificación 1: Lógica de predicados"
+                        data-link="https://docs.google.com/document/d/1uWCrRmqShidR6c98opKEJMveG8tPUuFLw5no3sxfI2E/preview">
+                        
+                        <div class="card-number activity-number">1</div>
+                        <div class="card-content"><h3>Planificación: Lógica de predicados</h3></div>
+                    </button>
+
+                    <div class="activity-side-button"
+                        onclick="event.stopPropagation()">
+
+                        <div class="visit-status sin-visita">Sin visita</div>
+
+                        <a href="https://docs.google.com/document/d/1uWCrRmqShidR6c98opKEJMveG8tPUuFLw5no3sxfI2E/edit?usp=sharing"
+                        target="_blank"class="resource-button"onclick="event.stopPropagation()">
+                            Drive
+                        </a>
+                    </div>
+                </article>
+
+                    <!-- Autoevaluación 1 -->
+
+                    <article class="project-card actividad-card">
+
+                    <button class="task-button actividad-button"
+                        data-title="Autoevaluación de la primera clase dictada"
+                        data-link="https://docs.google.com/document/d/1MGEun5fO_2A_pImrT8E8RG2IkOEvITVkeBO_9GMhHUw/preview">
+
+                        <div class="card-content"><h3>Autoevaluación de la primera clase </h3></div>
+                    </button>
+
+                    <div class="activity-side-button"
+                        onclick="event.stopPropagation()">
+                        <a href="https://docs.google.com/document/d/1MGEun5fO_2A_pImrT8E8RG2IkOEvITVkeBO_9GMhHUw/edit?usp=sharing"
+                        target="_blank"class="resource-button"onclick="event.stopPropagation()">
+                            Drive
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Planificación 2 -->
+
+                <article class="project-card actividad-card">
+                    <button class="task-button actividad-button"
+                        data-title="Planificación 2: Modus ponens"
+                        data-link="https://docs.google.com/document/d/1OMPP7c8kdufzNpteSO6DAFJQFzVYggV2qI7vl4ayzZA/preview">
+                        
+                        <div class="card-number activity-number">2</div>
+                        <div class="card-content"><h3>Planificación: Modus ponens</h3></div>
+                    </button>
+
+                    <div class="activity-side-button"
+                        onclick="event.stopPropagation()">
+
+                        <div class="visit-status con-visita">Con visita</div>
+
+                        <a href="https://docs.google.com/document/d/1OMPP7c8kdufzNpteSO6DAFJQFzVYggV2qI7vl4ayzZA/edit?usp=sharing"
+                        target="_blank"class="resource-button"onclick="event.stopPropagation()">
+                            Drive
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Autoevaluación 2 -->
+
+                <article class="project-card actividad-card">
+
+                    <button class="task-button actividad-button"
+                        data-title="Autoevaluación de la segunda clase dictada"
+                        data-link="https://docs.google.com/document/d/1YV3Tqq-JfYx7FN8vdmWLH3mUHRE4DAt44gMAJITNmX4/preview">
+
+                        <div class="card-content"><h3>Autoevaluación de la segunda clase </h3></div>
+                    </button>
+
+                    <div class="activity-side-button"
+                        onclick="event.stopPropagation()">
+                        <a href="https://docs.google.com/document/d/1YV3Tqq-JfYx7FN8vdmWLH3mUHRE4DAt44gMAJITNmX4/edit?usp=sharing"
+                        target="_blank"class="resource-button"onclick="event.stopPropagation()">
+                            Drive
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Planificación 3 -->
+
+                <article class="project-card actividad-card">
+                    <button class="task-button actividad-button"
+                        data-title="Planificación 3: Producto cartesiano"
+                        data-link="https://docs.google.com/document/d/1RqhwtsYa8ZSBBdlXyYz45NTv_p2ooHfA1cYJ1mRFSr0/preview">
+                        
+                        <div class="card-number activity-number">3</div>
+                        <div class="card-content"><h3>Planificación: Producto cartesiano</h3></div>
+                    </button>
+
+                    <div class="activity-side-button"
+                        onclick="event.stopPropagation()">
+
+                        <div class="visit-status con-visita">Con visita</div>
+
+                        <a href="https://docs.google.com/document/d/1RqhwtsYa8ZSBBdlXyYz45NTv_p2ooHfA1cYJ1mRFSr0/edit?usp=sharing"
+                        target="_blank"class="resource-button"onclick="event.stopPropagation()">
+                            Drive
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Autoevaluación 3 -->
+
+                <article class="project-card actividad-card">
+
+                    <button class="task-button actividad-button"
+                        data-title="Autoevaluación de la tercera clase dictada"
+                        data-link="https://docs.google.com/document/d/1oFOpnYC5OKNDbVCHwPszUFBAZ8pqGVWC9J6DnIy8uQU/preview">
+
+                        <div class="card-content"><h3>Autoevaluación de la tercera clase </h3></div>
+                    </button>
+
+                    <div class="activity-side-button"
+                        onclick="event.stopPropagation()">
+                        <a href="https://docs.google.com/document/d/1oFOpnYC5OKNDbVCHwPszUFBAZ8pqGVWC9J6DnIy8uQU/edit?usp=sharing"
+                        target="_blank"class="resource-button"onclick="event.stopPropagation()">
+                            Drive
+                        </a>
+                    </div>
+                </article>
+
+
+
+
+
+                    
+
+                </div>
+
+            </div>
+
+            
+            <!-- ========================= -->
+            <!-- VISOR -->
+            <!-- ========================= -->
+
+            <div id="content-wrapper"
+                class="hidden">
+
+                <div class="viewer-header">
+
+                    <span>
+                        Visualizador de trabajos
+                    </span>
+
+                </div>
+
+                <div class="iframe-container">
+
+                    <iframe id="content-frame"
+                        src=""
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================================= -->
+    <!-- FOOTER -->
+    <!-- ================================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 — Portfolio Didáctica II
+        </p>
+
+    </footer>
+
+    <!-- ================================= -->
+    <!-- DECORACIÓN -->
+    <!-- ================================= -->
+
+    <div class="background-shapes">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
