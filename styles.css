@@ -14,7 +14,7 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:linear-gradient(135deg,#4b0000,#8b0000,#d62828);
+    background:linear-gradient(135deg,#003b46,#00a6bd,#00d4e8);
     color:white;
     min-height:100vh;
     overflow-x:hidden;
@@ -40,7 +40,7 @@ body{
     top:0;
     z-index:999;
 
-    background:rgba(75,0,0,0.92);
+    background:rgba(0,59,70,0.92);
 
     border-bottom:1px solid rgba(255,255,255,0.08);
 
@@ -50,7 +50,7 @@ body{
 }
 
 .navbar.scrolled{
-    background:rgba(60,0,0,0.98);
+    background:rgba(0,45,54,0.98);
 }
 
 .logo{
@@ -63,7 +63,7 @@ body{
 }
 
 .logo i{
-    color:#ffb3b3;
+    color:#8ff5ff;
 }
 
 .clock{
@@ -250,7 +250,7 @@ body{
     min-width:100px;
     height:100px;
 
-    background:#8b0000;
+    background:#00a6bd;
     color:white;
 
     display:flex;
@@ -264,7 +264,7 @@ body{
 }
 
 .actividad-button:hover .card-number{
-    background:#b22222;
+    background:#00c4d8;
 }
 
 /* contenido */
@@ -273,7 +273,7 @@ body{
     height:100px;
 
     background:#f5f5f5;
-    color:#8b0000;
+    color:#00a6bd;
 
     display:flex;
     align-items:center;
@@ -327,7 +327,7 @@ body{
 
     text-decoration:none;
 
-    background:#8b0000;
+    background:#00a6bd;
     color:white;
 
     font-weight:700;
@@ -337,7 +337,7 @@ body{
 
 
 .resource-button:hover{
-    background:#d62828;
+    background:#00d4e8;
 }
 
 
@@ -376,7 +376,7 @@ body{
 /* hover igual que actividad */
 .resource-button:hover{
     transform:translateY(-4px);
-    background:#d62828;
+    background:#00d4e8;
 }
 
 /* brillo suave */
@@ -430,7 +430,7 @@ body{
 #back-to-list{
     border:none;
     background:white;
-    color:#8b0000;
+    color:#00a6bd;
 
     padding:16px 24px;
     border-radius:50px;
@@ -472,7 +472,7 @@ body{
     width:100%;
     padding:20px 25px;
 
-    background:#8b0000;
+    background:#00a6bd;
     color:white;
 
     font-size:1rem;
