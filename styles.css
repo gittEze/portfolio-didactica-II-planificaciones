@@ -671,3 +671,46 @@ body{
         text-align:center;
     }
 }
+
+/* =========================================
+   BOTÓN GENERAL DE DRIVE
+========================================= */
+
+.general-drive-container {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.general-drive-button {
+    width: 100%;
+    max-width: 100%;
+    padding: 18px 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.general-drive-button i {
+    font-size: 1.3rem;
+    color: #8ff5ff;
+}
+
+.general-drive-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
